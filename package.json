@@ -1,0 +1,32 @@
+{
+  "name": "javascript-testing",
+  "version": "1.0.0",
+  "description": "test using javascript and dom-testing",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravindrap52/javascript-testing.git"
+  },
+  "keywords": [
+    "jest",
+    "dom",
+    "testing",
+    "webpack",
+    "babel"
+  ],
+  "author": "ravindra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravindrap52/javascript-testing/issues"
+  },
+  "homepage": "https://github.com/ravindrap52/javascript-testing#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
+    "webpack": "^4.42.0"
+  }
+}
