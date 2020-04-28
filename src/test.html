@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Some test tables</h3>
+<div>
+<p>First table</p>
+    <table>
+        <tr>
+            <td>First</td>
+            <td>row</td>
+        </tr>
+        <tr>
+            <td>and</td>
+            <td>second</td>
+            <td>row</td>
+        </tr>
+        <tr>
+            <td>and</td>
+            <td>the</td>
+            <td>third</td>
+            <td>one</td>
+        </tr>
+    </table>
+</div>
+<p>Second table</p>
+<table>
+    <tr>
+        <td>Not</td>
+        <td>so</td>
+    </tr>
+    <tr>
+        <td>many</td>
+        <td>cells</td>
+    </tr>
+</table>
+</body>
+<script>
+    function getTableCellcount() {
+        let tableMaxCount = null;
+        let tableCellCount = [];
+        const tableElemRef = document.getElementsByTagName('table');
+        if(tableElemRef.length === 0 ) {
+            tableMaxCount = 0;
+        }else {
+            for(let i=0; i < tableElemRef.length; i++) {
+                let count = tableElemRef[i].getElementsByTagName('td').length;
+                tableCellCount.push(count);
+            }
+            tableMaxCount = Math.max(...tableCellCount);
+        }
+        return tableMaxCount;
+    }
+    getTableCellcount();
+</script>
+</html>
